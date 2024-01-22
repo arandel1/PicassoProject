@@ -1,0 +1,149 @@
+
+/* still to-do:
+- form action: open to another page after clicking "submit"
+- @media display settings: has to work on variou screen sizes -- at the bottom */
+
+body{
+  background-color: rgb(241, 241, 29);
+}
+
+h2{
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+  color: rgb(241, 241, 29);;
+  background-color: rgb(229, 25, 25);
+  width: 50vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.allCubes{
+  /* border: 10px solid black; */
+  display: inline-flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5vh;
+  width:80vw;
+
+  
+}
+.containerCube{
+  border: 4px solid black;
+  background-color: black; 
+  border-radius: 5px;
+  width: 190px;
+  height: 190px;
+  margin: 1vh;
+  z-index: 500;
+}
+
+.containerBlue{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgb(39, 38, 38);
+  border-radius: 5px;
+  background-color: rgb(31, 31, 218);
+  margin:0px
+
+
+}
+
+.containerRed{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgb(39, 38, 38);
+  border-radius: 5px;
+  background-color: rgb(229, 25, 25);
+  margin:0px
+}
+
+.containerCube2{
+  border: 4px solid black;
+  background-color: black; 
+  border-radius: 5px;
+  width: 190px;
+  height: 190px;
+  z-index: 500;
+  margin: 1vh;
+ 
+}
+
+.containerWhite{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgb(39, 38, 38);
+  border-radius: 5px;
+  background-color: white;
+  margin:0px
+}
+
+.containerCube3{
+  border: 4px solid black;
+  background-color: black; 
+  border-radius: 5px;
+  width: 190px;
+  height: 190px;
+  z-index: 500;
+  display: inline-flexbox;
+  margin: 1vh;
+
+}
+
+.containerYellow{
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgb(39, 38, 38);
+  border-radius: 5px;
+  background-color: rgb(241, 241, 29);
+  margin:0px
+}
+
+.form{
+  color: rgb(241, 241, 29);
+  border: 5px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(31, 31, 218);
+  font-family:'Courier New', Courier, monospace;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display:absolute; 
+  width: 80%;
+  margin: 3vh;
+ 
+}
+
+
+/* Desktop: 1680 x 1050
+iPad: 1024 x 768
+Mobile: 480 x 320 */
+
+@media screen and (max-width: 1680px) {
+  .containerCube {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .containerCube {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .containerCube {
+    width: 100%;
+  }
+}
+
